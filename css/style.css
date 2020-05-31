@@ -1,0 +1,110 @@
+/*
+Colors used:
+Main Color for Text: Dark blue rgb(0,32,96)
+Backgroundcolor for Quoteboxes light blue rgb(201,219,255)
+Response Color positive Confirmation green rgb(142,157,88)
+Activation Color Orange rgb(232,169,86)
+Boxes and Lines Light grey rgb(242,242,242)
+Backgroundcolor White rgb(255/255/255)
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: rgb(255,255,255);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: rgb(0,32,96);
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: rgb(232,169,86);
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: rgb(232,169,86);
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:focus {
+  color: rgb(232,169,86);
+  text-decoration: underline;
+}
+a:visited { /* visited link */
+  color: rgb(0,64,192);
+}
+a:active { /* selected link */
+  color: rgb(142,157,88);
+}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: rgb(242,242,242);
+  color: rgb(232,169,86) !important; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 10px;
+  border-bottom: 2px solid rgb(232,169,86); /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover {
+  background-color: rgb(210,210,210);
+  opacity: 1.0; /* Reduces the opacity of the button to 100% */
+  text-decoration: none;
+}
+.button:active{
+  background-color: rgb(142,157,88);
+  opacity: 1.0; /* Reduces the opacity of the button to 100% */
+  text-decoration: none;
+}
+
+.button.contact {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: rgb(242,242,242);
+  color: rgb(142,157,88) !important; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 10px;
+  border-bottom: 2px solid rgb(142,157,88); /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button.contact:hover {
+  background-color: rgb(210,210,210);
+  opacity: 1.0; /* Reduces the opacity of the button to 100% */
+  text-decoration: none;
+}
+.button.contact:active{
+  background-color: rgb(232,169,86);
+  opacity: 1.0; /* Reduces the opacity of the button to 100% */
+  text-decoration: none;
+}

@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Portfolio of Rolf</title>
+    <title>Rolf's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="https://css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -10,10 +12,12 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
-  <body>
 
-    <!--For the header:-->
+
+      <!--For the header:-->
   <header>
     <div>
       <img src="img/RHB.png" alt="Rolf Bewersdorf" >
@@ -29,21 +33,24 @@
 
   <main>
       <!--For the hero section:-->
-      <div>
-        <img src="img/rolf_2.jpg">
-      </div>
-      <div>
-        <h1>HELLO,  my name is Rolf Bewersdorf.</h1>
-      </div>
-      <div>
-        <span>I am an IT project manager with Lufthansa.</span>
-      </div>
-      <div>
-        <p>I strongly believe, that one of the most important goals is</p>
-        <p>always that the application supports the user and is fun to use.</p>
+      <div id="hero">
+        <div >
+          <img src="img/rolf_2.jpg">
+        </div>
+        <div>
+          <h1>HELLO,  my name is Rolf Bewersdorf.</h1>
+        </div>
+        <div>
+          <span>I am an IT project manager with Lufthansa.</span>
+        </div>
+        <div>
+          <p>I strongly believe, that one of the most important goals is</p>
+          <p>always that the application supports the user and is fun to use.</p>
+        </div>
       </div>
   <!--For your work/projects:-->
-      <div>
+
+      <div id="Works">
         <h2>Recent Works</h2>
       </div>
 
@@ -59,7 +66,7 @@
             <h3>The Photoscout App</h3><!-- heading for the project -->
             <p>UX design for photographers.</p>
             <p>How do I find the best location at what time?</p>
-            <a href="photoscout.html">more...</a><!-- button or link label -->
+            <a href="photoscout.html"class="button">more...</a><!-- button or link label -->
           </div><!-- end second column -->
       </div><!-- end row that holds (2) columns for project -->
 
@@ -73,7 +80,7 @@
       <div><!-- open second column (used for text) -->
         <h3>ONELog</h3><!-- heading for the project -->
         <p>Briefing tool for corporate communications</p>
-        <a href="">more...</a><!-- button or link label -->
+        <a href="#" class="button">more...</a><!-- button or link label -->
       </div><!-- end second column -->
      </div><!-- end row that holds (2) columns for project -->
 </main>
@@ -82,11 +89,11 @@
       <div>
         <h2>Contact</h2>
           <p> Do you like my work and want to discuss opportunities? Please get in touch.
-          <a href="tel:1-562-867-5309">Click to Call</a>
-          Prefer sending an email?</p>
+            <a href="tel:1-562-867-5309"class="button contact">Click to Call</a></p>
+          <p>Prefer sending an email?</p>
       </div>
       <div>
-        <a href="mailto:rolf@bewersdorf.info">Email me</a>
+        <a href="mailto:rolf@bewersdorf.info"class="button contact">Email me</a>
       </div>
       <div>
         <!--Social Media Layout and Placeholders-->
