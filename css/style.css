@@ -14,6 +14,7 @@ Backgroundcolor White rgb(255/255/255)
   box-sizing: border-box;
 }
 
+/* Area Definition */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: rgb(242,242,242);
@@ -44,31 +45,32 @@ main {
   text-align: center; /* Centers text */
 }
 
+/* Image und Logo styling */
 img {
   width: 100%;
 }
 .logorhb {
   width: 100px;
   padding: 10px 10px;
+  text-align: right;
 }
-.heroimg {width: 200px}
+.heroimg {
+  width: 200px
+}
 
+/* Headline styling */
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
-
 h1 {
   font-size: 2.75em;
   font-weight: 700;
-
 }
-
 h2 {
   font-size: 2.25em;
   font-weight: 700;
   text-transform: uppercase;
 }
-
 h3 {
   font-size: 1.75em;
   font-weight: 400;
@@ -78,26 +80,7 @@ h4 {
   font-weight: 400;
 }
 
-a {
-  color: rgb(232,169,86);
-  text-decoration: none; /* No underlining */
-}
-a:hover {
-  color: rgb(232,169,86);
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
-a:focus {
-  color: rgb(232,169,86);
-  text-decoration: underline;
-}
-a:visited { /* visited link */
-  color: rgb(0,64,192);
-}
-a:active { /* selected link */
-  color: rgb(142,157,88);
-}
-
-
+/* Button styling */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: rgb(242,242,242);
@@ -142,9 +125,7 @@ a:active { /* selected link */
   text-decoration: none;
 }
 
-
 /* Layout styling */
-
 .container {
   padding: 5px 15px;
   margin: 3px 0px;
@@ -159,13 +140,30 @@ a:active { /* selected link */
   background-color: rgb(255,255,255);
 }
 
+/* Navigation + Link styling */
+a {
+  color: rgb(232,169,86);
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: rgb(232,169,86);
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:focus {
+  color: rgb(232,169,86);
+  text-decoration: underline;
+}
+a:visited { /* visited link */
+  color: rgb(0,64,192);
+}
+a:active { /* selected link */
+  color: rgb(142,157,88);
 
-
+}
 nav {
   display: inline-block;
   width:100%
 }
-
 nav > ul {
   list-style-type: none;
   padding: 0;
