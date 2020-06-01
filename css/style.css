@@ -8,17 +8,50 @@ Boxes and Lines Light grey rgb(242,242,242)
 Backgroundcolor White rgb(255/255/255)
 */
 
-body {
-  font-family: 'Roboto', sans-serif;
+
+
+* {
+  box-sizing: border-box;
 }
+
 body {
-  background-color: rgb(255,255,255);
   font-family: 'Roboto', sans-serif;
+  background-color: rgb(242,242,242);
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: rgb(0,32,96);
 }
+
+header {
+  background-color: rgb(255,255,255);
+  box-shadow: 0px 10px 10px 0px rgba(122, 122, 122, 0.75);
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding-top: 150px;
+}
+#hero {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+img {
+  width: 100%;
+}
+.logorhb {
+  width: 100px;
+  padding: 10px 10px;
+}
+.heroimg {width: 200px}
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -45,10 +78,6 @@ h4 {
   font-weight: 400;
 }
 
-img {
-  width: 100%;
-}
-
 a {
   color: rgb(232,169,86);
   text-decoration: none; /* No underlining */
@@ -67,6 +96,8 @@ a:visited { /* visited link */
 a:active { /* selected link */
   color: rgb(142,157,88);
 }
+
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: rgb(242,242,242);
@@ -77,6 +108,7 @@ a:active { /* selected link */
   border-bottom: 2px solid rgb(232,169,86); /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:hover {
   background-color: rgb(210,210,210);
   opacity: 1.0; /* Reduces the opacity of the button to 100% */
@@ -97,6 +129,7 @@ a:active { /* selected link */
   border-radius: 10px;
   border-bottom: 2px solid rgb(142,157,88); /* width of the border, type, color */
   transition: 0.2s opacity;
+  float:inherit;
 }
 .button.contact:hover {
   background-color: rgb(210,210,210);
@@ -107,4 +140,43 @@ a:active { /* selected link */
   background-color: rgb(232,169,86);
   opacity: 1.0; /* Reduces the opacity of the button to 100% */
   text-decoration: none;
+}
+
+
+/* Layout styling */
+
+.container {
+  padding: 5px 15px;
+  margin: 3px 0px;
+  background-color: rgb(255,255,255);
+}
+
+.row {
+  margin: 25px 0px; /* 25px top and bottom, 0 left and right */
+}
+.socialmedia {
+  padding: 5px 15px;
+  background-color: rgb(255,255,255);
+}
+
+
+
+nav {
+  display: inline-block;
+  width:100%
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(0,32,96);
 }
