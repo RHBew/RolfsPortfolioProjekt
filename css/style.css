@@ -26,14 +26,14 @@ body {
 
 header {
   background-color: rgb(255,255,255);
+  text-align: center;
   box-shadow: 0px 10px 10px 0px rgba(122, 122, 122, 0.75);
-  display: inline-block;
   position: fixed;
   width: 100%;
 }
 
 main {
-  padding-top: 150px;
+  padding-top: 200px;
 }
 #hero {
   background-color: #ffffff;
@@ -49,11 +49,7 @@ main {
 img {
   width: 100%;
 }
-.logorhb {
-  width: 100px;
-  padding: 10px 10px;
-  text-align: right;
-}
+
 .heroimg {
   width: 200px
 }
@@ -90,6 +86,7 @@ h4 {
   border-radius: 10px;
   border-bottom: 2px solid rgb(232,169,86); /* width of the border, type, color */
   transition: 0.2s opacity;
+  float:right;
 }
 
 .button:hover {
@@ -112,7 +109,7 @@ h4 {
   border-radius: 10px;
   border-bottom: 2px solid rgb(142,157,88); /* width of the border, type, color */
   transition: 0.2s opacity;
-  float:inherit;
+  float:right;
 }
 .button.contact:hover {
   background-color: rgb(210,210,210);
@@ -132,8 +129,22 @@ h4 {
   background-color: rgb(255,255,255);
 }
 
+.logorhb {
+  text-align: center;
+  width: 100px;
+  padding: 10px 0px;
+}
+
+.hero {
+  text-align: center;
+}
 .row {
   margin: 25px 0px; /* 25px top and bottom, 0 left and right */
+}
+.row::after {
+content: "";
+clear: both;
+display: table;
 }
 .socialmedia {
   padding: 5px 15px;
@@ -177,4 +188,72 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 700;
   color: rgb(0,32,96);
+}
+
+/*Media Querries
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  body {
+    font-size: 20px; /* Sets the font size to 16px */
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .col-md-6 {
+  width: 50%;
+  }
+  [class*="col-"] {
+  float: left;
+  padding: 10px 10px;
+  }
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  body {
+    font-size: 20px; /* Sets the font size to 16px */
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .col-lg-7 {
+  width: 60%;
+  }
+  .col-lg-5 {
+  width: 40%;
+  }
+  [class*="col-"] {
+  float: left;
+  padding: 10px 10px;
+  }
+
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
