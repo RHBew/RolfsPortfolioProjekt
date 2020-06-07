@@ -85,13 +85,14 @@ h4 {
   padding: 5px;
   border-radius: 10px;
   border-bottom: 2px solid rgb(232,169,86); /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
   float:right;
 }
 
 .button:hover {
   background-color: rgb(210,210,210);
-  opacity: 1.0; /* Reduces the opacity of the button to 100% */
+  opacity: 0.5; /* Reduces the opacity of the button to 100% */
   text-decoration: none;
 }
 .button:active{
@@ -256,4 +257,53 @@ X-large devices (1440px or larger)
   margin-left: auto;
   margin-right: auto;
 }
+}
+
+/* ==============================
+Animations
+================================= */
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
