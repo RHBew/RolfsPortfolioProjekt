@@ -26,14 +26,14 @@ body {
 
 header {
   background-color: rgb(255,255,255);
-  text-align: center;
   box-shadow: 0px 10px 10px 0px rgba(122, 122, 122, 0.75);
   position: fixed;
   width: 100%;
+  padding: 10px 0 4px;
 }
 
 main {
-  padding-top: 200px;
+  padding-top: 110px;
 }
 #hero {
   background-color: #ffffff;
@@ -132,7 +132,7 @@ h4 {
 
 .logorhb {
   text-align: center;
-  width: 100px;
+  width: 50px;
   padding: 10px 0px;
 }
 
@@ -170,15 +170,40 @@ a:visited { /* visited link */
 }
 a:active { /* selected link */
   color: rgb(142,157,88);
+}
 
+.navtoggle li:not(:last-child) {
+  display: none;
 }
-nav {
-  display: inline-block;
-  width:100%
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  font-size: 30px;
+  padding-right: 15;
 }
+
+.navtoggle.responsive li  {
+display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 2px solid rgb(242,242,242);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   text-align: center;
 }
 nav > ul > li {
@@ -202,13 +227,36 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
   body {
-    font-size: 20px; /* Sets the font size to 16px */
+    font-size: 20px; /* Sets the font size to 20px */
   }
+
+  main {
+    padding-top: 150px;
+  }
+  .logorhb {
+    text-align: right;
+    width: 100px;
+    padding: 10px 0px;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+
   nav {
+    display: inline-block;
+    width:100%
     width: auto;
     float: right;
     margin-top: 4px;
   }
+  nav > ul {
+  margin: 1em 0;
+}
   .col-md-6 {
   width: 50%;
   }
@@ -228,7 +276,7 @@ Large devices (1024px or larger)
     padding: 20px 0 13px;
   }
   body {
-    font-size: 20px; /* Sets the font size to 16px */
+    font-size: 20px; /* Sets the font size to 20px */
   }
   nav {
     width: auto;

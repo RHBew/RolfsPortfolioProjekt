@@ -14,20 +14,24 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4299d1fe29.js" crossorigin="anonymous"></script>
   </head>
   <body>
 
     <!--For the header:-->
     <header>
         <div class="container">
-          <a href="index.html"><img src="img/RHB.png" alt="Rolf Bewersdorf" class="logorhb"></a>
-          <nav>
-            <ul class="navigation">
-              <li><a href="index.html">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
+          <div class="navtoggle" id="myNavtoggle">
+            <a href="index.html"><img src="img/RHB.png" alt="Rolf Bewersdorf" class="logorhb"></a>
+            <nav>
+              <ul class="navigation">
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
     </header>
 
@@ -1035,5 +1039,7 @@
                  </div>
             </div>
     </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
