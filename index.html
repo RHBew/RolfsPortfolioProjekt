@@ -1,152 +1,184 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Rolf's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="https://css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4299d1fe29.js" crossorigin="anonymous"></script>
-  </head>
 
- <body>
+<head>
+  <meta charset="utf-8">
+  <title>Rolf's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="https://css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4299d1fe29.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
 
   <header>
-      <div class="container">
-          <div class="navtoggle" id="myNavtoggle">
-            <a href="index.html"><img class="logorhb" src="img/RHB.png" alt="Rolf Bewersdorf" ></a>
-            <nav>
-              <ul class="navigation">
-                <li><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact"onclick="menuToggle()">Contact</a></li>
-                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-              </ul>
-            </nav>
-          </div>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img class="logorhb" src="img/RHB.png" alt="Rolf Bewersdorf"></a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
       </div>
+    </div>
   </header>
 
   <main>
 
-      <!--For the hero section:-->
-      <div class="container">
-        <div class="hero">
-            <h1>Hello,  my name is Rolf Bewersdorf.</h1>
-            <div>
-              <img src="img/rolf_2.jpg" class="heroimg">
-            </div>
-            <div>
-              <span>I am an IT project manager with Lufthansa.</span>
-            </div>
-            <div>
-              <p>I strongly believe, that one of the most important goals is</p>
-              <p>always that the application supports the user and is fun to use.</p>
-            </div>
-          </div>
+    <!--For the hero section:-->
+    <div class="container">
+      <div class="hero">
+        <h1>Hello, my name is Rolf Bewersdorf.</h1>
+        <div>
+          <img src="img/rolf_2.jpg" class="heroimg" alt="Rolf">
+        </div>
+        <div>
+          <span>I am an IT project manager with Lufthansa.</span>
+        </div>
+        <div>
+          <p>I strongly believe, that one of the most important goals is</p>
+          <p>always that the application supports the user and is fun to use.</p>
+        </div>
       </div>
+    </div>
 
 
-  <!--For your work/projects:-->
-      <div id="Works">
-              <div class="container">
-                  <h2>Recent Works</h2>
-
-
-                      <div class="row"><!-- open row that holds (2) columns for first project -->
-                                  <div class="col-md-6 col-lg-7"><!-- open first column (used for image) -->
-                                      <picture>
-                                        <source srcset="img/600_photoscout.jpg" media="(max-width:767px)">
-                                        <img src="img/1200_photoscout.jpg" alt="Photoscout">
-                                      </picture>
-                                  </div><!-- end first column -->
-
-                                  <div class="col-md-6  col-lg-5"><!-- open second column (used for text) -->
-                                      <h3>The Photoscout App</h3><!-- heading for the project -->
-                                      <p>UX design for photographers.</p>
-                                      <p>How do I find the best location at what time?</p>
-                                      <a href="photoscout.html"class="button">more...</a><!-- button or link label -->
-                                  </div><!-- end second column -->
-                      </div><!-- end row that holds (2) columns for first project -->
-
-
-
-                        <div class="row"><!-- open row that holds (2) columns for second project -->
-                                <div class="col-md-6 col-lg-7"><!-- open first column (used for image) -->
-                                      <picture>
-                                          <source srcset="img/600_ONELog.png" media="(max-width:767px)">
-                                          <img src="img/1200_ONELog.png" alt="ONELog">
-                                      </picture>
-                                </div><!-- end first column -->
-                                <div class="col-md-6 col-lg-5"><!-- open second column (used for text) -->
-                                      <h3>ONELog</h3><!-- heading for the project -->
-                                      <p>Briefing tool for corporate communications</p>
-                                      <a href="#" class="button">more...</a><!-- button or link label -->
-                                </div><!-- end second column -->
-                        </div><!-- end row that holds (2) columns for second project -->
-          </div>
-      </div>
+    <!--For your work/projects:-->
+    <div id="Works">
       <div class="container">
-        <h2>Animation</h2>
-        Click <a href="animation.html">here</a> for the Animation project.
+        <h2>Recent Works</h2>
+
+
+        <div class="row">
+          <!-- open row that holds (2) columns for first project -->
+          <div class="col-md-6 col-lg-7">
+            <!-- open first column (used for image) -->
+            <picture>
+              <source srcset="img/600_photoscout.jpg" media="(max-width:767px)">
+              <img src="img/1200_photoscout.jpg" alt="Photoscout">
+            </picture>
+          </div><!-- end first column -->
+
+          <div class="col-md-6  col-lg-5">
+            <!-- open second column (used for text) -->
+            <h3>The Photoscout App</h3><!-- heading for the project -->
+            <p>UX design for photographers.</p>
+            <p>How do I find the best location at what time?</p>
+            <a href="photoscout.html" class="button">more...</a><!-- button or link label -->
+          </div><!-- end second column -->
+        </div><!-- end row that holds (2) columns for first project -->
+
+
+
+        <div class="row">
+          <!-- open row that holds (2) columns for second project -->
+          <div class="col-md-6 col-lg-7">
+            <!-- open first column (used for image) -->
+            <picture>
+              <source srcset="img/600_ONELog.png" media="(max-width:767px)">
+              <img src="img/1200_ONELog.png" alt="ONELog">
+            </picture>
+          </div><!-- end first column -->
+          <div class="col-md-6 col-lg-5">
+            <!-- open second column (used for text) -->
+            <h3>ONELog</h3><!-- heading for the project -->
+            <p>Briefing tool for corporate communications</p>
+            <a href="#" class="button">more...</a><!-- button or link label -->
+          </div><!-- end second column -->
+        </div><!-- end row that holds (2) columns for second project -->
+      </div>
+    </div>
+    <div class="container">
+      <h2>Animation</h2>
+      Click <a href="animation.html">here</a> for the Animation project.
+    </div>
+  </main>
+  <!--For the footer:-->
+  <footer id="contact">
+    <div class="container">
+      <h2>Contact</h2>
       <div>
+        <p> Do you like my work and want to discuss opportunities? Please get in touch.</p>
+        <p><a href="tel:1-562-867-5309" class="button contact">Click to Call</a></p>
+        <p>Prefer sending an email?</p>
+      </div>
+      <div>
+        <a href="mailto:rolf@bewersdorf.info" class="button contact">Email me</a>
+      </div>
 
-
-</main>
-<!--For the footer:-->
-<footer id="contact">
-      <div class="container">
-              <h2>Contact</h2>
-              <div>
-                <p> Do you like my work and want to discuss opportunities? Please get in touch.</p>
-                  <a href="tel:1-562-867-5309"class="button contact">Click to Call</a></p>
-                <p>Prefer sending an email?</p>
-              </div>
-              <div>
-                <a href="mailto:rolf@bewersdorf.info"class="button contact">Email me</a>
-              </div>
-
-              <div class="socialmedia">
-                <!--Social Media Layout and Placeholders-->
-                <!-- Twitter Icon as SVG -->
-                <a href="https://www.twitter.com" target="_blank">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.731 455.731" style="width:50px" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
-                        <g>
-                            <rect x="0" y="0" style="fill:#50ABF1;" width="455.731" height="455.731" />
-                            <path style="fill:#FFFFFF;" d="M60.377,337.822c30.33,19.236,66.308,30.368,104.875,30.368c108.349,0,196.18-87.841,196.18-196.18
+      <div class="socialmedia">
+        <!--Social Media Layout and Placeholders-->
+        <!-- Twitter Icon as SVG -->
+        <a href="https://www.twitter.com" target="_blank">
+          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.731 455.731" style="width:50px"
+            xml:space="preserve">
+            <g>
+              <rect x="0" y="0" style="fill:#50ABF1;" width="455.731" height="455.731" />
+              <path style="fill:#FFFFFF;" d="M60.377,337.822c30.33,19.236,66.308,30.368,104.875,30.368c108.349,0,196.18-87.841,196.18-196.18
                           c0-2.705-0.057-5.39-0.161-8.067c3.919-3.084,28.157-22.511,34.098-35c0,0-19.683,8.18-38.947,10.107
                           c-0.038,0-0.085,0.009-0.123,0.009c0,0,0.038-0.019,0.104-0.066c1.775-1.186,26.591-18.079,29.951-38.207
                           c0,0-13.922,7.431-33.415,13.932c-3.227,1.072-6.605,2.126-10.088,3.103c-12.565-13.41-30.425-21.78-50.25-21.78
                           c-38.027,0-68.841,30.805-68.841,68.803c0,5.362,0.617,10.581,1.784,15.592c-5.314-0.218-86.237-4.755-141.289-71.423
                           c0,0-32.902,44.917,19.607,91.105c0,0-15.962-0.636-29.733-8.864c0,0-5.058,54.416,54.407,68.329c0,0-11.701,4.432-30.368,1.272
                           c0,0,10.439,43.968,63.271,48.077c0,0-41.777,37.74-101.081,28.885L60.377,337.822z" />
-                        </g>
-                      </svg>
-                </a>
-                <!-- Instagram Icon as SVG -->
-                <a href="https://www.instagram.com/rhbew/" target="_blank">
-                  <svg height="50px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x31_73-instagram"><g><linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="74.3496" x2="393.8339" y1="83.7275" y2="386.7129"><stop offset="0" style="stop-color:#FEC053"/><stop offset="0.3273" style="stop-color:#F2203E"/><stop offset="0.6485" style="stop-color:#B729A8"/><stop offset="1" style="stop-color:#5342D6"/></linearGradient><path d="M256.052,138.088c-65.268,0-117.913,52.646-117.913,117.912    c0,65.267,52.645,117.91,117.913,117.91c65.267,0,117.911-52.644,117.911-117.91C373.963,190.734,321.318,138.088,256.052,138.088    z M256.052,332.659c-42.177,0-76.659-34.38-76.659-76.659c0-42.279,34.378-76.657,76.659-76.657    c42.277,0,76.657,34.378,76.657,76.657C332.709,298.279,298.229,332.659,256.052,332.659L256.052,332.659z M406.288,133.266    c0,15.291-12.315,27.502-27.502,27.502c-15.292,0-27.502-12.314-27.502-27.502c0-15.188,12.313-27.503,27.502-27.503    C393.973,105.763,406.288,118.077,406.288,133.266z M484.382,161.177c-1.743-36.839-10.158-69.474-37.148-96.36    c-26.886-26.887-59.52-35.302-96.36-37.148c-37.971-2.155-151.777-2.155-189.747,0c-36.739,1.743-69.372,10.159-96.361,37.046    c-26.99,26.887-35.302,59.52-37.149,96.36c-2.155,37.969-2.155,151.777,0,189.747c1.745,36.842,10.159,69.473,37.149,96.361    c26.989,26.887,59.521,35.301,96.361,37.148c37.969,2.154,151.776,2.154,189.747,0c36.841-1.744,69.475-10.161,96.36-37.148    c26.887-26.889,35.302-59.52,37.148-96.361C486.538,312.853,486.538,199.147,484.382,161.177z M435.329,391.563    c-8.004,20.112-23.5,35.61-43.716,43.716c-30.273,12.009-102.108,9.236-135.562,9.236c-33.456,0-105.393,2.669-135.563-9.236    c-20.114-8.005-35.611-23.498-43.717-43.716C64.766,361.29,67.538,289.455,67.538,256s-2.669-105.391,9.234-135.562    c8.006-20.114,23.5-35.61,43.717-43.716c30.273-12.007,102.107-9.236,135.563-9.236c33.453,0,105.391-2.668,135.562,9.236    c20.113,8.002,35.609,23.5,43.716,43.716c12.007,30.272,9.237,102.107,9.237,135.562S447.336,361.392,435.329,391.563z" style="fill:url(#SVGID_1_);"/></g></g><g id="Layer_1"/></svg>
+            </g>
+          </svg>
+        </a>
+        <!-- Instagram Icon as SVG -->
+        <a href="https://www.instagram.com/rhbew/" target="_blank">
+          <svg height="50px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="_x31_73-instagram">
+              <g>
+                <linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="74.3496" x2="393.8339" y1="83.7275" y2="386.7129">
+                  <stop offset="0" style="stop-color:#FEC053" />
+                  <stop offset="0.3273" style="stop-color:#F2203E" />
+                  <stop offset="0.6485" style="stop-color:#B729A8" />
+                  <stop offset="1" style="stop-color:#5342D6" />
+                </linearGradient>
+                <path
+                  d="M256.052,138.088c-65.268,0-117.913,52.646-117.913,117.912    c0,65.267,52.645,117.91,117.913,117.91c65.267,0,117.911-52.644,117.911-117.91C373.963,190.734,321.318,138.088,256.052,138.088    z M256.052,332.659c-42.177,0-76.659-34.38-76.659-76.659c0-42.279,34.378-76.657,76.659-76.657    c42.277,0,76.657,34.378,76.657,76.657C332.709,298.279,298.229,332.659,256.052,332.659L256.052,332.659z M406.288,133.266    c0,15.291-12.315,27.502-27.502,27.502c-15.292,0-27.502-12.314-27.502-27.502c0-15.188,12.313-27.503,27.502-27.503    C393.973,105.763,406.288,118.077,406.288,133.266z M484.382,161.177c-1.743-36.839-10.158-69.474-37.148-96.36    c-26.886-26.887-59.52-35.302-96.36-37.148c-37.971-2.155-151.777-2.155-189.747,0c-36.739,1.743-69.372,10.159-96.361,37.046    c-26.99,26.887-35.302,59.52-37.149,96.36c-2.155,37.969-2.155,151.777,0,189.747c1.745,36.842,10.159,69.473,37.149,96.361    c26.989,26.887,59.521,35.301,96.361,37.148c37.969,2.154,151.776,2.154,189.747,0c36.841-1.744,69.475-10.161,96.36-37.148    c26.887-26.889,35.302-59.52,37.148-96.361C486.538,312.853,486.538,199.147,484.382,161.177z M435.329,391.563    c-8.004,20.112-23.5,35.61-43.716,43.716c-30.273,12.009-102.108,9.236-135.562,9.236c-33.456,0-105.393,2.669-135.563-9.236    c-20.114-8.005-35.611-23.498-43.717-43.716C64.766,361.29,67.538,289.455,67.538,256s-2.669-105.391,9.234-135.562    c8.006-20.114,23.5-35.61,43.717-43.716c30.273-12.007,102.107-9.236,135.563-9.236c33.453,0,105.391-2.668,135.562,9.236    c20.113,8.002,35.609,23.5,43.716,43.716c12.007,30.272,9.237,102.107,9.237,135.562S447.336,361.392,435.329,391.563z"
+                  style="fill:url(#SVGID_1_);" />
+              </g>
+            </g>
+            <g id="Layer_1" />
+          </svg>
 
-                </a>
+        </a>
 
-                    <!-- Behance Icon as SVG -->
-                    <a href="https://www.behance.net/gallery/67706647/The-Photoscout-App-Project?tracking_source=search_projects_recommended%7CPhotoscout" target="_blank">
-                                <svg style="width:50px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="behance__x2C__social__x2C__media"><g><path d="M205.918,215.982c0-11.053-9.094-19.982-20.176-19.982H136v40    h49.743C196.824,236,205.918,227.049,205.918,215.982z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;"/><path d="M185.743,266H136v50h59.972    c11.071,0,19.86-12.942,19.86-24.021C215.832,270.719,196.824,266,185.743,266z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;"/><path d="M434.479,16H77.521C43.717,16,16,43.718,16,77.522v356.955    C16,468.281,43.717,496,77.521,496h356.957C468.286,496,496,468.281,496,434.478V77.522C496,43.718,468.286,16,434.479,16z     M296,166h90v30h-90V166z M195.972,356H96V156h99.972c27.521,0,49.936,22.331,49.936,50.146c0,17.872-9.646,33.703-23.832,42.496    c19.573,6.805,34.058,25.445,34.058,47.293C256.133,329.107,228.88,356,195.972,356z M416,286H306.081    c1.407,22,16.164,40.031,35.179,40.031c18.718,0,29.23-12.031,32.916-30.031h40.576c-6.805,34-28.374,60.123-73.492,60.123    c-45.4,0-75.204-33.466-75.204-75.167c0-41.426,29.717-74.871,75.117-74.871c45.118,0,74.827,33.446,74.827,74.864    C416,282.64,416,284,416,286z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;"/><path d="M341.26,236.207c-17.593,0-30.927,11.793-33.213,29.793    h66.129C371.332,248,358.563,236.207,341.26,236.207z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;"/></g></g><g id="Layer_1"/>
-                                </svg>
-                    </a>
-                    <p>Copyright by Rolf Bewersdorf 2020</p>
-               </div>
-          </div>
+        <!-- Behance Icon as SVG -->
+        <a href="https://www.behance.net/gallery/67706647/The-Photoscout-App-Project?tracking_source=search_projects_recommended%7CPhotoscout" target="_blank">
+          <svg style="width:50px" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="behance__x2C__social__x2C__media">
+              <g>
+                <path d="M205.918,215.982c0-11.053-9.094-19.982-20.176-19.982H136v40    h49.743C196.824,236,205.918,227.049,205.918,215.982z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
+                <path d="M185.743,266H136v50h59.972    c11.071,0,19.86-12.942,19.86-24.021C215.832,270.719,196.824,266,185.743,266z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
+                <path
+                  d="M434.479,16H77.521C43.717,16,16,43.718,16,77.522v356.955    C16,468.281,43.717,496,77.521,496h356.957C468.286,496,496,468.281,496,434.478V77.522C496,43.718,468.286,16,434.479,16z     M296,166h90v30h-90V166z M195.972,356H96V156h99.972c27.521,0,49.936,22.331,49.936,50.146c0,17.872-9.646,33.703-23.832,42.496    c19.573,6.805,34.058,25.445,34.058,47.293C256.133,329.107,228.88,356,195.972,356z M416,286H306.081    c1.407,22,16.164,40.031,35.179,40.031c18.718,0,29.23-12.031,32.916-30.031h40.576c-6.805,34-28.374,60.123-73.492,60.123    c-45.4,0-75.204-33.466-75.204-75.167c0-41.426,29.717-74.871,75.117-74.871c45.118,0,74.827,33.446,74.827,74.864    C416,282.64,416,284,416,286z"
+                  style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
+                <path d="M341.26,236.207c-17.593,0-30.927,11.793-33.213,29.793    h66.129C371.332,248,358.563,236.207,341.26,236.207z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
+              </g>
+            </g>
+          </svg>
+        </a>
+        <p>Copyright by Rolf Bewersdorf 2020</p>
+      </div>
+    </div>
   </footer>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
+
 </html>

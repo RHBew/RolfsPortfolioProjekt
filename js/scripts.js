@@ -19,14 +19,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
-
-
-
-
-
-
-
 var shortArray = [5,7,9];
 var mixedArray = [
   1,
